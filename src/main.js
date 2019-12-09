@@ -10,6 +10,8 @@ import "./assets/app.scss";
 
 Vue.config.productionTip = false;
 
+Vue.component('Navbar', require('./components/Navbar.vue').default)
+
 new Vue({
   router,
   render: h => h(App)
