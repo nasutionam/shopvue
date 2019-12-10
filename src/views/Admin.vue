@@ -5,7 +5,7 @@
             <div class="sidebar-content">
                 <!-- sidebar-brand  -->
                 <div class="sidebar-item sidebar-brand">
-                    <a href="#">pro sidebar</a>
+                    <router-link to="/admin">Shop-Vue</router-link>
                 </div>
                 <!-- sidebar-header  -->
                 <div class="sidebar-item sidebar-header d-flex flex-nowrap">
@@ -13,8 +13,7 @@
                         <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
                     </div>
                     <div class="user-info">
-                        <span class="user-name">Jhon
-                            <strong>Smith</strong>
+                        <span class="user-name">Nasution    
                         </span>
                         <span class="user-role">Administrator</span>
                         <span class="user-status">
@@ -38,53 +37,28 @@
                 </div>
                 <!-- sidebar-menu  -->
                 <div class=" sidebar-item sidebar-menu">
-                    <ul>
+                    <ul class="text-left">
                         <li class="header-menu">
-                            <span>General</span>
+                            <span>Menu</span>
                         </li>
-                        <li class="sidebar-dropdown">
-                            <a href="#">
-                                <i class="fa fa-tachometer-alt"></i>
-                                <span class="menu-text">Dashboard</span>
-                                <span class="badge badge-pill badge-warning">New</span>
-                            </a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li>
-                                        <a href="#">Dashboard 1
-                                            <span class="badge badge-pill badge-success">Pro</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Dashboard 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Dashboard 3</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <li>
+                            <router-link to="/admin/overview">
+                                <span class="menu-text">Overview</span>
+                            </router-link>
                         </li>
-
-                        <li class="header-menu">
-                            <span>Extra</span>
+                        <li>
+                            <router-link to="/admin/products">
+                                <span class="menu-text">Products</span>
+                            </router-link>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-book"></i>
-                                <span class="menu-text">Documentation</span>
-                                <span class="badge badge-pill badge-primary">Beta</span>
+                                <span class="menu-text">Orders</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-calendar"></i>
-                                <span class="menu-text">Calendar</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-folder"></i>
-                                <span class="menu-text">Examples</span>
+                                <span class="menu-text">Logout</span>
                             </a>
                         </li>
                     </ul>
@@ -96,16 +70,10 @@
         <!-- page-content  -->
         <main class="page-content pt-2">
             <div id="overlay" class="overlay"></div>
-            <div class="container-fluid p-5">
-                <div class="row">
-                    <div class="form-group col-md-12">
-                        <h2>Pro Sidebar</h2>
-                        <p>This is a responsive sidebar template with dropdown menu based on bootstrap framework.</p>
-
-                    </div>
+            
+                    <router-view />
                     
-                </div>
-            </div>
+                
         </main>
         <!-- page-content" -->
     </div>
