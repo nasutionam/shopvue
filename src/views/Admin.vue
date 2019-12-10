@@ -52,9 +52,9 @@
                             </router-link>
                         </li>
                         <li>
-                            <a href="#">
+                            <router-link to="/admin/orders">
                                 <span class="menu-text">Orders</span>
-                            </a>
+                            </router-link>
                         </li>
                         <li>
                             <a href="#">

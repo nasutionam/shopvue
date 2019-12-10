@@ -15,9 +15,11 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quaerat voluptate iusto? Nihil voluptas vitae veritatis magnam reprehenderit, reiciendis ex? Libero quasi natus veniam voluptatum, voluptas exercitationem ratione consectetur et!
             </p>
              <button class="btn custom-btn btn-outline-primary mr-4">Browse Products</button>
-          </div>
+          </div> 
         </div>
     </div>
+
+    <Login></Login>
   </div>
 </template>
 
@@ -25,11 +27,12 @@
 // @ is an alias to /src
 import Hero from "@/components/Hero.vue";
 import Products from "@/sections/Products.vue";
+import Login from '@/components/Login.vue';
 
 export default {
   name: "home",
   components: {
-    Hero,Products
+    Hero,Products,Login
   }
 
 };
